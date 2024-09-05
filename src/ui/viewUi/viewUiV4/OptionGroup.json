@@ -1,0 +1,24 @@
+{
+  "name": "OptionGroup",
+  "description": "使用模拟的增强下拉选择器来代替浏览器原生的选择器。",
+  "description_zh": "使用模拟的增强下拉选择器来代替浏览器原生的选择器。",
+  "tag": "选择器",
+  "props": {
+    "label": {
+      "default": "空",
+      "value": "",
+      "type": "String",
+      "description": "分组的组名",
+      "isRequired": false,
+      "description_zh": "分组的组名"
+    }
+  },
+  "link": "https://v4.iviewui.com/components/select",
+  "link_zh": "https://v4.iviewui.com/components/select",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "filename": "OptionGroup",
+  "suggestions": []
+}

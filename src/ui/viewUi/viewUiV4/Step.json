@@ -1,0 +1,64 @@
+{
+  "name": "Step",
+  "description": "拆分某项流程的步骤，引导用户按流程完成任务。",
+  "description_zh": "拆分某项流程的步骤，引导用户按流程完成任务。",
+  "tag": "步骤条",
+  "props": {
+    "status": {
+      "default": "process",
+      "value": "",
+      "type": "String",
+      "description": "步骤的状态，可选值为wait、process、finish、error，不设置时自动判断",
+      "isRequired": false,
+      "description_zh": "步骤的状态，可选值为wait、process、finish、error，不设置时自动判断"
+    },
+    "title": {
+      "default": "空",
+      "value": "",
+      "type": "String",
+      "description": "标题",
+      "isRequired": false,
+      "description_zh": "标题"
+    },
+    "content": {
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "description": "步骤的详细描述，可选",
+      "isRequired": false,
+      "description_zh": "步骤的详细描述，可选"
+    },
+    "icon": {
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "description": "步骤的图标，可选",
+      "isRequired": false,
+      "description_zh": "步骤的图标，可选"
+    }
+  },
+  "link": "https://v4.iviewui.com/components/steps",
+  "link_zh": "https://v4.iviewui.com/components/steps",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [
+    {
+      "name": "title",
+      "description": "自定义 title",
+      "description_zh": "自定义 title"
+    },
+    {
+      "name": "content",
+      "description": "自定义 content",
+      "description_zh": "自定义 content"
+    },
+    {
+      "name": "icon",
+      "description": "自定义 icon",
+      "description_zh": "自定义 icon"
+    }
+  ],
+  "filename": "Step",
+  "suggestions": []
+}

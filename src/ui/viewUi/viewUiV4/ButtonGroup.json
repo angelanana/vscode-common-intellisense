@@ -1,0 +1,40 @@
+{
+  "name": "ButtonGroup",
+  "description": "基础组件，触发业务逻辑时使用。",
+  "description_zh": "基础组件，触发业务逻辑时使用。",
+  "tag": "按钮",
+  "props": {
+    "size": {
+      "default": "default",
+      "value": "",
+      "type": "String",
+      "description": "按钮组合大小，可选值为large、small、default或者不设置",
+      "isRequired": false,
+      "description_zh": "按钮组合大小，可选值为large、small、default或者不设置"
+    },
+    "shape": {
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "description": "按钮组合形状，可选值为circle或者不设置",
+      "isRequired": false,
+      "description_zh": "按钮组合形状，可选值为circle或者不设置"
+    },
+    "vertical": {
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "description": "是否纵向排列按钮组",
+      "isRequired": false,
+      "description_zh": "是否纵向排列按钮组"
+    }
+  },
+  "link": "https://v4.iviewui.com/components/button",
+  "link_zh": "https://v4.iviewui.com/components/button",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "filename": "ButtonGroup",
+  "suggestions": []
+}

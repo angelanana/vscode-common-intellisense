@@ -29,6 +29,7 @@ export const UINames = [
   '@opentiny/vue',
   '@nutui/nutui',
   'view-ui-plus',
+  'view-ui-v4'
 ]
 
 export const nameMap: any = {
@@ -48,4 +49,5 @@ export const nameMap: any = {
   '@opentiny/vue': 'tinyVue',
   '@nutui/nutui': 'nutUi',
   'view-ui-plus': 'viewUiPlus',
+  'view-ui-v4': 'viewUiV4'
 }

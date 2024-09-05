@@ -144,21 +144,87 @@ const map: any = [
   Affix,
   BackTop,
   Spin,
-  Scroll
+  Scroll,
 ]
 
 export function viewUiV4() {
-  return propsReducer('view-ui-v4', map, '')
+  return propsReducer('view-ui4', map, '')
 }
 
-function generateComponentsMap(components: any[]): [any, string, string][] {
-  return components.map(component => {
-    const name = component.name;
-    return [component, name, `<${name}></${name}>`];
-  });
-}
-
-const componentsMap = generateComponentsMap(map);
+const componentsMap = [
+  [Button, Button.name, `<${Button.name}></${Button.name}>`],
+  [ButtonGroup, ButtonGroup.name, `<${ButtonGroup.name}></${ButtonGroup.name}>`],
+  [Icon, Icon.name, `<${Icon.name}></${Icon.name}>`],
+  [Row, Row.name, `<${Row.name}></${Row.name}>`],
+  [Col, Col.name, `<${Col.name}></${Col.name}>`],
+  [Sider, Sider.name, `<${Sider.name}></${Sider.name}>`],
+  [List, List.name, `<${List.name}></${List.name}>`],
+  [ListItem, ListItem.name, `<${ListItem.name}></${ListItem.name}>`],
+  [ListItemMeta, ListItemMeta.name, `<${ListItemMeta.name}></${ListItemMeta.name}>`],
+  [Card, Card.name, `<${Card.name}></${Card.name}>`],
+  [Collapse, Collapse.name, `<${Collapse.name}></${Collapse.name}>`],
+  [Panel, Panel.name, `<${Panel.name}></${Panel.name}>`],
+  [Split, Split.name, `<${Split.name}></${Split.name}>`],
+  [Divider, Divider.name, `<${Divider.name}></${Divider.name}>`],
+  [CellGroup, CellGroup.name, `<${CellGroup.name}></${CellGroup.name}>`],
+  [Cell, Cell.name, `<${Cell.name}></${Cell.name}>`],
+  [Menu, Menu.name, `<${Menu.name}></${Menu.name}>`],
+  [MenuItem, MenuItem.name, `<${MenuItem.name}></${MenuItem.name}>`],
+  [Submenu, Submenu.name, `<${Submenu.name}></${Submenu.name}>`],
+  [MenuGroup, MenuGroup.name, `<${MenuGroup.name}></${MenuGroup.name}>`],
+  [Tabs, Tabs.name, `<${Tabs.name}></${Tabs.name}>`],
+  [TabPane, TabPane.name, `<${TabPane.name}></${TabPane.name}>`],
+  [Dropdown, Dropdown.name, `<${Dropdown.name}></${Dropdown.name}>`],
+  [DropdownItem, DropdownItem.name, `<${DropdownItem.name}></${DropdownItem.name}>`],
+  [Page, Page.name, `<${Page.name}></${Page.name}>`],
+  [Breadcrumb, Breadcrumb.name, `<${Breadcrumb.name}></${Breadcrumb.name}>`],
+  [BreadcrumbItem, BreadcrumbItem.name, `<${BreadcrumbItem.name}></${BreadcrumbItem.name}>`],
+  [Badge, Badge.name, `<${Badge.name}></${Badge.name}>`],
+  [Anchor, Anchor.name, `<${Anchor.name}></${Anchor.name}>`],
+  [AnchorLink, AnchorLink.name, `<${AnchorLink.name}></${AnchorLink.name}>`],
+  [Steps, Steps.name, `<${Steps.name}></${Steps.name}>`],
+  [Step, Step.name, `<${Step.name}></${Step.name}>`],
+  [Form, Form.name, `<${Form.name}></${Form.name}>`],
+  [FormItem, FormItem.name, `<${FormItem.name}></${FormItem.name}>`],
+  [Input, Input.name, `<${Input.name}></${Input.name}>`],
+  [Radio, Radio.name, `<${Radio.name}></${Radio.name}>`],
+  [RadioGroup, RadioGroup.name, `<${RadioGroup.name}></${RadioGroup.name}>`],
+  [Checkbox, Checkbox.name, `<${Checkbox.name}></${Checkbox.name}>`],
+  [CheckboxGroup, CheckboxGroup.name, `<${CheckboxGroup.name}></${CheckboxGroup.name}>`],
+  [Switch, Switch.name, `<${Switch.name}></${Switch.name}>`],
+  [Table, Table.name, `<${Table.name}></${Table.name}>`],
+  [Select, Select.name, `<${Select.name}></${Select.name}>`],
+  [Option, Option.name, `<${Option.name}></${Option.name}>`],
+  [OptionGroup, OptionGroup.name, `<${OptionGroup.name}></${OptionGroup.name}>`],
+  [AutoComplete, AutoComplete.name, `<${AutoComplete.name}></${AutoComplete.name}>`],
+  [Slider, Slider.name, `<${Slider.name}></${Slider.name}>`],
+  [DatePicker, DatePicker.name, `<${DatePicker.name}></${DatePicker.name}>`],
+  [TimePicker, TimePicker.name, `<${TimePicker.name}></${TimePicker.name}>`],
+  [Cascader, Cascader.name, `<${Cascader.name}></${Cascader.name}>`],
+  [Transfer, Transfer.name, `<${Transfer.name}></${Transfer.name}>`],
+  [InputNumber, InputNumber.name, `<${InputNumber.name}></${InputNumber.name}>`],
+  [Rate, Rate.name, `<${Rate.name}></${Rate.name}>`],
+  [Upload, Upload.name, `<${Upload.name}></${Upload.name}>`],
+  [ColorPicker, ColorPicker.name, `<${ColorPicker.name}></${ColorPicker.name}>`],
+  [Alert, Alert.name, `<${Alert.name}></${Alert.name}>`],
+  [Modal, Modal.name, `<${Modal.name}></${Modal.name}>`],
+  [Drawer, Drawer.name, `<${Drawer.name}></${Drawer.name}>`],
+  [Tree, Tree.name, `<${Tree.name}></${Tree.name}>`],
+  [Tooltip, Tooltip.name, `<${Tooltip.name}></${Tooltip.name}>`],
+  [Poptip, Poptip.name, `<${Poptip.name}></${Poptip.name}>`],
+  [Progress, Progress.name, `<${Progress.name}></${Progress.name}>`],
+  [Avatar, Avatar.name, `<${Avatar.name}></${Avatar.name}>`],
+  [Tag, Tag.name, `<${Tag.name}></${Tag.name}>`],
+  [Carousel, Carousel.name, `<${Carousel.name}></${Carousel.name}>`],
+  [Timeline, Timeline.name, `<${Timeline.name}></${Timeline.name}>`],
+  [TimelineItem, TimelineItem.name, `<${TimelineItem.name}></${TimelineItem.name}>`],
+  [Time, Time.name, `<${Time.name}></${Time.name}>`],
+  [Circle, Circle.name, `<${Circle.name}></${Circle.name}>`],
+  [Affix, Affix.name, `<${Affix.name}></${Affix.name}>`],
+  [BackTop, BackTop.name, `<${BackTop.name}></${BackTop.name}>`],
+  [Spin, Spin.name, `<${Spin.name}></${Spin.name}>`],
+  [Scroll, Scroll.name, `<${Scroll.name}></${Scroll.name}>`],
+]
 
 export function viewUiV4Components() {
   return componentsReducer({
@@ -166,6 +232,6 @@ export function viewUiV4Components() {
     isSeperatorByHyphen: false,
     prefix: '',
     isReact: false,
-    lib: 'view-ui-v4'
+    lib: 'view-ui',
   })
 }
